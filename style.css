@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding-top:30px;
+    margin-bottom:200px;
+    color:white;
+    font-family: Roboto;
+    background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, #7bb7fd 100.2% );
+    
+}
+.bar{
+    position:absolute;
+    display:grid;
+    font-size: 5px;
+    height:8px;
+    background-color: white;
+    bottom:7px;
+    left:117px;
+    right:117px;
+    border-radius: 20px;;
+}
+
+.container{
+    display:grid;
+    position: relative;
+    grid-template-rows: 250px 450px;
+    background-color: #000000;
+    border-radius:80px;
+    display: grid;
+    height:700px;
+    width:430px;
+}
+
+.dialpad{
+    display: grid;
+    grid-template-rows: 79px 79px 79px 79px 79px;
+}
+.row1 , .row2 , .row3 , .row4 {
+    display: grid;
+    grid-template-columns: 107px 107px 107px 107px ;
+    height:79px;
+}
+.row5{
+    display: grid;
+    grid-template-columns: 214px 107px 107px;  
+}
+.row1 div , .row2 div , .row3 div , .row4 div , .row5 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border:none;
+}
+button:hover{
+    cursor: pointer;
+}
+.a{
+    width: 70px;
+    height:70px;
+    background-color: #A5A5A5;
+    border-radius: 100px;
+    font-size: 25px;
+
+}
+.a:hover{
+    background-color: #a5a5a5c9;
+}
+.b{
+    width: 70px;
+    height:70px;
+    background-color: #F89B10;
+    border-radius: 100px;
+    color: white;
+    font-size: 35px;
+}
+.b:hover{
+    background-color: #f89b10da;
+}
+.c{
+    width: 70px;
+    height:70px;
+    background-color: #333333;
+    border-radius: 100px;
+    color: white;
+    font-size: 25px;
+
+}
+.c:hover ,.d:hover{
+    background-color: #333333c9;
+    
+}
+.d{
+    width:175px;
+    height:70px;
+    background-color: #333333;
+    border-radius: 120px;
+    color: white;
+    font-size: 25px;
+}
+.screen{
+    position: relative;
+    display: grid;
+    height:60px;
+    font-size: 35px;
+    top:190px;
+    align-items:center;
+
+}
+.render{
+    direction: ltr;
+    text-align: left;
+    white-space: nowrap;
+    text-align: right;
+    overflow:auto;
+    padding-right:20px;
+}
+.render::-webkit-scrollbar {  /* removes scroll bar */
+    display: none;
+  }
+.errormsg{
+    color:#f89b10da;
+}
